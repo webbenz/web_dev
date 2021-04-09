@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="file:///C:/Users/User/Desktop/PROGZ_LIBRARIES/W3CSS/w3.css">
+    <title>Web Development</title>
+</head>
+
+<body class="w3-light-grey">
+
+    <div class="loader_bg"><span class="loader"></span></div>
+    <div id="page" class="animate-bottom w3-padding w3-center w3-slim w3-indigo w3-xxxlarge"><br><br><br>
+        <div id="cover" class="w3-card-24 w3-round">Welcome To Benz'Coder</div>
+    </div>
+    <div id="page2" class="animate-bottom w3-padding w3-center w3-slim w3-indigo w3-xxxlarge"><br><br><br>
+        <div id="cover" class="w3-card-24 w3-round">Thanks For Visiting !!!</div>
+    </div>
+
+    <div id="mySidenav" class="sidenav w3-indigo w3-center">
+        <a class="closebtn w3-hover-text-yellow" title="close" onclick="closeNav()">×</a>
+        <a href="#" onclick="func(event, 'content')" class="tab_link w3-card-4 w3-yellow w3-hover-yellow">
+            <div class="w3-tag w3-card-8 w3-red w3-round w3-padding">
+                <span style="border: 1px solid white;" class="w3-tag w3-card-8 w3-red w3-medium w3-round w3-text-shadow">Web Development</span>
+            </div>
+        </a>
+        <a href="#" onclick="func(event, 'web-dev_vs_web-design')" class="tab_link w3-medium w3-hover-yellow w3-card-2 w3-padding">Web Development VS. Web Design</a>
+        <a href="#" onclick="func(event, 'Developer')" class="tab_link w3-medium w3-hover-yellow w3-card-2 w3-padding">What Does Have A Developer Do?</a>
+        <a href="#" onclick="func(event, 'Mobile_Developer')" class="tab_link w3-medium w3-hover-yellow w3-card-2 w3-padding">Mobile Developers</a>
+        <a href="#" onclick="func(event, 'programming')" class="tab_link w3-medium w3-hover-yellow w3-card-2 w3-padding">Programming Languages, Libraries and Frameworks</a>
+        <a href="#" onclick="func(event, 'other')" class="tab_link w3-medium w3-hover-yellow w3-card-2 w3-padding">Other Web Development Tools</a>
+        <a href="#" onclick="func(event, 'setting')" class="tab_link w3-medium w3-hover-yellow w3-card-2 w3-padding">Settings</a>
+        <a href="#" onclick="closePage()" class="tab_link w3-medium w3-hover-yellow w3-card-2 w3-padding">Exit</a>
+    </div>
+
+    <div id="header_container" class="w3-container w3-bottombar w3-padding w3-border-blue w3-indigo">
+        <h1 id="header" class="w3-center w3-text-shadow"><b>WEB DEVELOPMENT</b>
+            <span style="font-size:30px;cursor:pointer; float: right;" title="open" id="opennav" onclick="openNav()">☰</span>
+        </h1>
+    </div>
+
+    <div id="main" class="w3-container w3-padding-small">
+
+        <div id="content" class="lists set w3-card-4 w3-center">
+            <br>
+            <p>Web Development is the process of building websites and applications for the internet or a private network known as an intranet. Web Development is not concerned with the design of a website; rather is all about the coding and programming
+                that powers the website's functionality.</p><br>
+            <p>From the most simple, static web pages to social media platforms and apps, from e-commerce websites to content management systems (CMS); all the tools we used via the internet on daily basis have been built by developers.</p><br>
+            <p>Web Development can be broken down into three layers; client-side coding (front-end), server-side coding (backend) and database technology.</p><br>
+            <p>Let's take look at each of these layers in more detail.</p><br>
+            <button id="continue_btn" class="w3-btn w3-round w3-padding w3-indigo"><b>CONTINUE</b></button><br>
+            <br><br><br>
+        </div>
+
+        <div id="content_web_layers" class="w3-card-4 w3-center set">
+            <div class="w3-container w3-round w3-padding w3-pink w3-text-shadow w3-card-4">
+                Three Layers of Web Development
+                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-hover-text-red w3-margin-right w3-medium">&times;</span>
+            </div>
+            <p class="w3-card-2 w3-border">
+                <h3>Client-Side</h3> Client-Side scripting, or front-end Development, refers to the everything that the end users experience directly. Client-Side codes executes in a web browser and directly relates to what people see when they visit a website.
+                Things like layout, fonts, colours, menus and contact forms are all driven by the front-end.</p><br>
+            <p class="w3-card-2 w3-border">
+                <h3>Server-Side</h3> Server-Side scripting, or back-end Development, is all about what goes on behind-the-scenes. The back-end is essentially part of the websites that the user doesn't actually see. It is responsible for storing and and organizing
+                data, and ensuring that everything on the Client-Side runs smoothly. It does this by communicating with the front-end. Whenever something happens on the client-side -- say, a users fills out a form -- The browser sends a request to the
+                Server-Side. The Server-Side "responds" with relevant information in the form of front-end code that the browser can then interpret and display.
+            </p><br>
+            <p class="w3-card-2 w3-border">
+                <h3>Database Technology</h3> Websites is also rely on database technology. The database contain all the files and content that are necessary for a website to function, storing it in such a way that make it easy to retrieve, organize, edit
+                and save. The Database run on a server, and most websites typically use some form of Relational Database Management System (RDBMS).</p><br>
+            <p>To summarize the front-end, back-end and database technology all works together to build and run fully functional website or application, and these three layers form the foundation of Web Development.</p><br><br><br><br>
+        </div>
+
+
+        <div id="web-dev_vs_web-design" class="lists w3-card-4 w3-center set">
+            <h3>Difference between Web Development And Web Design</h3>
+            <p>You might hear the terms web development and web design used interchangeably, but these are two very different.</p><br>
+            <p>Imagine a web designer and web developer working together to build a car: the developer would take care of all the functional components like engine, the wheels and the gears, while designer would be responsible for both the visual aspects
+                -- how the car looks, the layout of the dashboard, the design of the seats -- and for the user experience provided by the car, so whether or not it's a smooth drive.</p><br>
+            <p>Web designers design how the website looks and feels. They model the layout of the website, making sure it's logical, user-friendly and pleasant to use. They consider all the different visual elements: What colour schemes and fonts will be
+                used? What buttons, drop-down menus and scrollbars should be included, and where? What interactive touch-point does the user interact with to get from point A to B? Web design also considers the information architecture of the website,
+                establishing what content will be included and where it should be placed.</p><br>
+            <p>Web Design is an extremely broad-field, and will often be broken down into more specific roles such as <u class="w3-text-blue">User Experience Design</u>, <u class="w3-text-blue">User interface Design</u> and <u class="w3-text-blue">Information Architecture</u>.</p><br>
+            <p>It is the Web Developer's job to take this design and develop it into a live, fully functional website. A front-end developer takes the visual design as provided by the web designer and builds it using coding language such as HTML, CSS and
+                Javascript. A back-end Developer builds the more advanced functionality of the site, such as checkout function on an e-commerce site.</p><br>
+            <p>In short, a web designer is the architect, while the web developer is the builder or engineer.</p>
+            <br><br><br>
+        </div>
+
+
+        <div id="Developer" class="lists w3-card-4 w3-center set">
+            <h3>What Does A Web Developer Do?</h3>
+            <p>The role of the web Developer is to build and maintain websites. Web Developers can work in house or <u class="w3-text-blue">freelance</u>, and the specific tasks and responsibilities involved will vary depending on whether they're working
+                as a front-end, back-end or fullstack developer. Fullstack Developers specialized in both the front-end and back-end; we'll go into more detail about <u class="w3-text-blue">What a fullstack developer does</u> later on.</p><br>
+            <p>Web Developers are responsible for building a product that meets both the client's need and those of the customer or end user. Web developers collaborate with stakeholders, clients and designers in order to understand the vision: how should
+                the final website look and function?</p><br>
+            <p>A large part of web development also revolves around identifying and fixing bugs in order to constantly optimize and improve a website or system. Web developers are therefore keen problem solvers, regularly coming up with solutions and workarounds
+                to keep things running smoothly.</p><br>
+            <p>Of course, all web developers are proficient in certain programming languages. However, different developers will work with different languages depending on their specific job title and area of expertise. Let's take a look at the different
+                layers of the web development and the associated tasks in more detail.</p><br>
+
+            <table data-role="table" class="w3-table  w3-row w3-round w3-card-4 w3-responsive">
+                <tr class="w3-card-2 w3-bottombar w3-border-blue">
+                    <th class="w3-border  w3-indigo">Front-End Developers</th>
+                    <th class="w3-border  w3-indigo">Back-End Developers</th>
+                    <th class="w3-border  w3-indigo">Fullstack Developers</th>
+                </tr>
+                <tr class="w3-card-2 w3-bottombar w3-border-blue">
+                    <td class="w3-border w3-tiny w3-white">Code the front-end of the website; i.e, the part that the user sees and interacts with.</td>
+                    <td class="w3-border w3-tiny w3-white">Work behind-the-scenes, building and maintaining the technology needed to power the front-end.</td>
+                    <td class="w3-border w3-tiny w3-white">Experts in both back-end and front-end development.</td>
+                </tr>
+                <tr class="w3-card-2 w3-bottombar w3-border-blue">
+                    <td class="w3-border w3-tiny w3-white">Bring the web designer's design to life using HTML, CSS and Javascript.</td>
+                    <td class="w3-border w3-tiny w3-white">Ensure that everything the front-end developer builds is fully functional.</td>
+                    <td class="w3-border w3-tiny w3-white">Guide on strategy and best practice.</td>
+                </tr>
+                <tr class="w3-card-2 w3-bottombar w3-border-blue">
+                    <td class="w3-border w3-tiny w3-white">Ensure responsive design.</td>
+                    <td class="w3-border w3-tiny w3-white">Create and manage the database</td>
+                    <td class="w3-border w3-tiny w3-white">Well-verse in both business logic and user experience.</td>
+                </tr>
+            </table>
+            <br>
+
+            <div class="w3-accordion w3-light=grey">
+                <button class="w3-btn-block w3-animate-top w3-border w3-left-align" onclick="accordion('content1')">What Does The Front-End Developer Do?</button>
+                <div id="content1" class="w3-accordion-content w3-animate-left w3-left-align w3-container">It's the front-end developer's job to code the front-end of a website or application; that is, the part of the website that the user sees and interacts with. <br>
+                    <a id="front-dev" href="#front-end-developer-do" class="w3-text-blue"><u>See The Full Reference ...</u></a>
+                </div>
+
+                <button class="w3-btn-block w3-animate-top w3-border w3-left-align" onclick="accordion('content2')">What Does The Back-End Developer Do?</button>
+                <div id="content2" class="w3-accordion-content w3-animate-left w3-left-align w3-container">The back-end is essentially the brains behind the face (front-end). A back-end developer is therefore responsible for building and maintaining the technology needed to power the front-end, consisting of three parts: a server, an application
+                    and database. <br>
+                    <a id="back-dev" href="#back-end-developer-do" class="w3-text-blue"><u>See The Full Reference ...</u></a>
+                </div>
+
+                <button class="w3-btn-block w3-animate-top w3-border w3-left-align" onclick="accordion('content3')">What Does Fullstack Developer Do?</button>
+                <div id="content3" class="w3-accordion-content w3-animate-left w3-left-align w3-container">A fullstack developer is someone who understand and work across. the 'fullstack' of technology: that is both front-end and back-end. Fullstack developers are experts in every stage of the web development process, meaning they are well-equipped
+                    to get hands-on, but can also guide on strategy and best practice. <br>
+                    <a id="full-dev" href="#fullstack-developer-do" class="w3-text-blue"><u>See The Full Reference ...</u></a>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+
+        <div id="front-end-developer-do" class="w3-card-4 w3-center set">
+            <h3>What Does The Front-End Developer Do?</h3>
+            <p>It's the front-end developer's job to code the front-end of a website or application; that is, the part of the website that the user sees and interacts with. They take the back-end data and turn it into something that is easily comprehensible,
+                visually pleasing and fully functional for the everyday user. They will work from designs provided by the web designer and bring them to life using HTML, CSS and Javascript (more on those later!).</p><br>
+            <p>The front-end developer implements the website's layout. interactive and navigational elements such as buttons and scrollbars, images and content and internal links (links that navigate from one page to another within the sme website). Front-end
+                developers are also responsible for ensuring optimal display across different browsers and devices. They will code the website in such a way that makes it responsive or adaptive to various screen sizes, so that user gets the same experience
+                whether they're visiting the website on mobile, desktop or tablet.</p><br>
+            <p>Front-end Developer will also carry out usability tests and fix any bugs that arise. At the same time, they will consider SEO best practices, maintain software workflow management, nd develop tools that enhance how the user interacts with
+                a website in any browser.</p><br>
+            <a id="btn_prev" class="w3-btn w3-indigo w3-padding w3-border w3-left-align">&#9668;</a><a id="btn_next" class="w3-btn w3-indigo w3-padding w3-border w3-right-align">&#9658;</a><br>
+            <br><br><br>
+        </div>
+
+        <div id="back-end-developer-do" class="w3-card-4 w3-center set">
+            <h3>What Does The Back-End Developer Do?</h3>
+            <p>The back-end is essentially the brains behind the face (front-end). A back-end developer is therefore responsible for building and maintaining the technology needed to power the front-end, consisting of three parts: a server, an application
+                and a database.</p><br>
+            <p>The code that back-end developers create ensures that everything the front-end developer build is fully functional, and it is the back-end developer's job to make sure that the server, application and database all communicate with each other.
+                So how do they do this? First, they use server-side languages such as PHP, Ruby, Python and Java to build the application. Then they use tools like MySQL, Oracle and SQL server to find, save or edit data and deliver it back to the user
+                in front-end code.</p><br>
+            <p>Just like front-end developers, back-end developers will liaise with the client or business owner in order to understand their needs and requirements. They will then deliver these in a number of ways depending on the specifics of the project.
+                Typical back-end development tasks include creating, integrating and managing the database, building server-side software using back-end frameworks, developing and deploying content management systems (for a blog, for example), as well
+                as working with web server technologies, API integration and operating systems. </p><br>
+            <a id="btn_prev_from_backend" class="w3-btn w3-indigo w3-padding w3-border w3-left-align">&#9668;</a><a id="btn_next_from_backend" class="w3-btn w3-indigo w3-padding w3-border w3-right-align">&#9658;</a><br>
+            <br><br><br>
+        </div>
+
+        <div id="fullstack-developer-do" class="w3-card-4 w3-center set">
+            <h3>What Does The Fullstack Developer Do?</h3>
+            <p>A fullstack developer is someone who understand and work across. the 'fullstack' of technology: that is both front-end and back-end. Fullstack developers are experts in every stage of the web development process, meaning they are well-equipped
+                to get hands-on, but can also guide on strategy and best practices.</p><br>
+            <p>Most Fullstack Developers have gathered many years of experience in a variety of different roles, giving them a solid grounding across the entire web development spectrum. Fullstack developers are proficient in both front-end and back-end
+                languages and frameworks, as well as in sever, network and hosting environments. They are also well versed in both business logic and user experience. </p>
+            <a id="btn_prev_from_fullstack" class="w3-btn w3-indigo w3-padding w3-border w3-left-align">&#9668;</a><br>
+            <br><br><br>
+        </div>
+
+        <div id="Mobile_Developer" class="lists w3-card-4 w3-center set">
+            <h3>Mobile Developer</h3>
+            <p>Web Developers may also specialize in mobile app development, either for iOS or Android. </p><br>
+            <p>iOS Developers build apps that run with the iOS operating system -- the one used by Apple devices. iOS Developers are fluent in <u class="w3-text-blue">Swift</u>, the programming language that Apple created specifically for their apps.</p><br>
+            <p>Android Developers builds apps that are compatible with all android devices, such as Samsung smartphones. Java is the official programming language for android.</p>
+            <br><br><br><br><br>
+        </div>
+
+
+        <div id="programming" class="lists w3-card-4 w3-center set">
+            <h3>Programming Languages, Libraries and Frameworks</h3>
+            <p>In order to build websites and apps, web developers work with languages, libraries and frameworks. Let's take a look at each of these in detail, as well as some other tools that web developers use in their day-to-day work.</p><br>
+
+            <h4><b>What Are Languages?</b></h4><br>
+            <p>In the world of web development, languages are the building blocks that programmers use to create websites, apps and software. There are all different types of languages, including programming languages, mark-up languages, stylesheet languages
+                and database languages.</p><br>
+
+            <h5><b>Programming Languages</b></h5><br>
+            <p>A programming language is essentially a set of instructions and commands which tell the computer to produce a certain output. Programmers use so called "high-level" programming languages to write source code. High Level languages use logical
+                words and symbols making executes code. Interpreted languages are generally used for running scripts, such as those used to generate content for dynamic websites.</p><br>
+            <p>Low-level languages are those that can be directly recognized by and executed on the computer hardware; they don't need to be interpreted or translated. Machine Language and assembly language are some common examples of low-level languages.</p><br>
+            <p>Some of the most popular languages of 2018 include Java, C, C++, Python, C#, Javascript, PHP, Ruby and Perl.</p><br>
+
+            <h5><b>Mark-up Languages</b></h5><br>
+            <p>Mark-up languages are used to specify the formatting of a text file. In other words, a mark-up language tells the software that display the text how the text should be formatted. Mark-up languages are completely legible to the human eye --
+                they contain standard words -- but the mark-up tags are not visible in the final output.</p><br>
+            <p>The two most popular Mark-up languages are HTML and XML. <b class="w3-text-blue">HTML</b> stands for HyperText Markup Language and is used for the creation of websites. When added to plain text document, HTML tags describe how this document
+                should be displayed by a web browser. <b class="w3-text-blue">XML</b> stands for eXtensible Mark-up Language. It is a mark-up language very similar to HTML; However, while HTML was designed to display data with a focus on how it looks,
+                XML was designed purely to store and transport data. Unlike HTML, XML tags are not predefined; rather, they are created by the author of the document. The point of XML is to simplify data sharing and transport, platform changes and data
+                availability, as it provides a software and hardware independent means storing, transporting and sharing data.</p><br>
+
+            <h5><b>StyleSheet Languages</b></h5><br>
+            <p>A stylesheet is basically a set of stylistic rules. Style Sheet Languages are used, quite literally, to style documents that are written in mark-up languages. </p><br>
+            <p>Consider a document written in HTML and styled using CSS (Cascading Style Sheets), a style sheet language. The HTML is responsible for the content and structure of the web page, while
+                <b class="w3-text-blue">CSS determines how this content should be presented visually.</b> Can be used to add colours, change fonts, insert backgrounds and borders, as well s to style forms. CSS is also used to optimize web pages for responsive
+                design, ensuring they adapt their layout to whatever device the user is on.</p><br>
+
+            <h5><b>Database Language</b></h5><br>
+            <p>Languages re not only used for building websites, software and apps; they are also used to create and manage databases.</p><br>
+            <p>Databases are used to store huge volumes of data. The <b class="w3-text-blue">Spotify</b> music app, for example, uses databases store music files, as well as data about the user's listening preferences. Likewise, social media apps like Instagram
+                uses databases to store user profile information; every time a user updates their profile in some way, the app's database will also update.</p><br>
+            <p>Databases are not designed to understand the same languages that apps are programmed in, So, it's essential to have a language that they do understand -- like SQL, the standard language for accessing and manipulating relational databases.
+                SQL stands for Structured Query Language. It has its own markup, and basically enables programmers to work with the data held in a database system. </p><br>
+
+            <h4><b>What are Libraries and Frameworks?</b></h4><br>
+            <p>Web developers also work with libraries and frameworks. Despite much confusion, they are not the same thing -- although they are both there to make the developer's job easier.</p><br>
+            <p>Libraries and Frameworks are essentially sets of pre-written code, but libraries are smaller and tend to be used for more specific use-cases. A <b class="w3-text-blue">Library</b> contains a collection of useful code, grouped together to be
+                reused later. The purposed of a library is to enable developers to reach the same end goal while writing less code to get there.</p><br>
+            <p>Let's take the example of Javascript, the language, and jQuery, a Javascript Library. Rather than writing, say,ten lines of code in Javascript, the developer can take the condensed, pre-written version from the jQuery Library -- saving time
+                and effort.</p><br>
+            <p>A <b class="w3-text-blue">Frameworks</b> contains ready-made components and tools that enable the developer to <b class="w3-text-blue">write code</b> faster, and many frameworks also contain libraries. It gives developer structure to work
+                from, and the framework you choose to work with will largely dictate the way you build your website or app, so choosing a framework is a big decision. Some popular Frameworks include <b class="w3-text-blue">Bootstrap</b>, Rails and Angular.</p><br>
+            <p>The easiest way to understand libraries and Frameworks is to imagine you are building a house. The Frameworks provides the foundation and the structure, as well as instructions or guidelines for completing certain tasks. Say you want to install
+                an oven in your new home: you could buy a separate components and build the oven from scratch, or you would pick a ready-made oven from the store. Just like building a website, you can write the code from scratch or you can take pre-written
+                code from a library and simple insert it.</p>
+            <br><br><br>
+        </div>
+
+        <div id="other" class="lists w3-card-4 w3-center set">
+            <h3>Other Web Development Tools</h3><br>
+            <p>Web Developers will also use a text editor, such as <b class="w3-text-blue">Atom</b>, <b class="w3-text-blue">Sublime</b> or <b class="w3-text-blue">Visual Studio Code</b>, to write their code; a web browser, such as <b class="w3-text-blue">Chrome</b>                or
+                <b class="w3-text-blue">Firefox</b> and an extremely crucial tool: Git!.</p><br>
+            <p>Git is a <b class="w3-text-blue">version control</b> system where developers cn store and manage their code. As a web developer, it's inevitable that you'll make constant changes to your code, so a tool like Git that enables you to track these
+                changes and reverse them if necessary is extremely valuable. Git also makes it easier to work with other teams and to manage multiple projects at once. Git has become such a staple in the world of web development that it's now considered
+                really bad practice not to use it.</p><br>
+            <p>Another extremely popular tool is GitHub, a cloud interface for Git. GitHub offers all the version control functionality of Git, but also comes with its own features such as bug tracking, task management and project wikis. GitHub not only
+                hosts repositories; it also provides developers with a comprehensive tool-set, making it easier to follow best practices for coding. It is considered the place to be for open-source projects, and also provides a platform for web developers
+                to showcase their skills.</p>
+            <br><br><br>
+        </div>
+
+        <div id="setting" class="lists w3-card-4 w3-center set">
+            <h3 class="w3-padding">Change Background Of The Page</h3>
+            <div class="w3-btn-group w3-indigo" style="padding: 0;">
+                <button id="black" class="w3-btn-block w3-border w3-round w3-black ">Black</button>
+                <button id="red" class="w3-btn-block w3-border w3-round w3-red ">Red</button>
+                <button id="blue" class="w3-btn-block w3-border w3-round w3-blue ">Blue</button>
+                <button id="green" class="w3-btn-block w3-border w3-round w3-green ">Green</button>
+                <button id="pink" class="w3-btn-block w3-border w3-round w3-pink ">Pink</button>
+                <button id="light_grey" class="w3-btn-block w3-border w3-round w3-light-grey w3-border ">Light Grey</button>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+
+        <div id="modal" class="w3-modal">
+            <div class="w3-modal-content w3-card-8 w3-animate-top w3-center w3-round-xlarge">
+                <header class="w3-container w3-indigo">
+                    <span class="w3-closebtn" onclick="document.getElementById('modal').style.display = 'none';">&times;</span>
+                    <h3>Confirmation</h3>
+                </header>
+                <div class="w3-container w3-padding-xlarge w3-text-black">
+                    <p>Are you sure you want to exit?</p>
+                </div>
+                <footer class="w3-container w3-indigo w3-padding-xlarge">
+                    <button id="btn_confirmation" onclick="cancel()" class="w3-btn w3-hover-red w3-ripple">Cancel</button>
+                    <button id="btn_confirmation" onclick="yes()" class="w3-btn w3-hover-green w3-ripple ">Yes</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="w3-indigo w3-center w3-padding">&copy;Copyright of 2020-2021 by Benru Presno Macatangay</div>
+
+    <script defer src="file:///C:/Users/User/Desktop/PROGZ_LIBRARIES/JS_library/JQUERY/jquery-3.5.1.min.js "></script>
+    <script defer src="index.js "></script>
+</body>
+
+</html>
